@@ -200,7 +200,7 @@ const OnboardingWizard = ({ onCompleted }: Props) => {
             </div>
             <TypingTest
               words={testWords}
-              durationSeconds={10}
+              durationSeconds={45}
               language={preferredTypingLanguages[0] ?? 'en'}
               onFinish={(metrics) => {
                 setTestResult({ wpm: metrics.wpm, accuracy: metrics.accuracy });
